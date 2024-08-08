@@ -1,0 +1,312 @@
+/* Reseteo de márgenes y padding para todos los elementos, y ajuste del box-sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Variables de color y fuente */
+:root {
+    --color-fondo: #FDFFAE; /* Color de fondo general */
+    --color-primario: #0A3871; /* Color primario (azul oscuro) */
+    --color-secundario: #495057; /* Color secundario (gris oscuro) */
+    --color-terciario: white; /* Color terciario (blanco) */
+    --color-cuarto: #D8DFE8; /* Color cuarto (gris claro) */
+    --color-quinto: #0A3871; /* Color quinto (igual que el primario) */
+    --fuente-primaria: 'Inter'; /* Fuente primaria utilizada */
+}
+
+/* Estilo para el body */
+body {
+    font-family: var(--fuente-primaria); /* Aplica la fuente primaria */
+    background-color: var(--color-fondo); /* Color de fondo del body */
+}
+
+/* Estilo para el header */
+header {
+    color: var(--color-primario); /* Color del texto del header */
+    font-size: 2rem; /* Tamaño de fuente */
+    display: flex;
+    justify-content: center; /* Centra el contenido horizontalmente */
+    gap: 1rem; /* Espacio entre elementos dentro del header */
+}
+
+/* Estilo para el logo de Alura */
+.logo__alura {
+    position: absolute;
+    top: 2.5rem; /* Posiciona el logo desde la parte superior */
+    left: 2rem; /* Posiciona el logo desde la izquierda */
+}
+
+/* Estilo para el texto de usuario */
+.text__usuario {
+    color: var(--color-primario); /* Color del texto */
+    font-size: 2rem; /* Tamaño de fuente */
+    position: absolute;
+    top: 10rem; /* Posición desde la parte superior */
+    left: 15rem; /* Posición desde la izquierda */
+    width: 36rem; /* Ancho del campo de texto */
+    height: 3rem; /* Altura del campo de texto */
+    background: none; /* Sin fondo */
+    border: none; /* Sin borde */
+}
+
+/* Estilo para la advertencia */
+.advertencia {
+    color: var(--color-secundario); /* Color del texto de advertencia */
+    font-size: 0.8rem; /* Tamaño de fuente */
+    position: absolute;
+    top: 53rem; /* Posición desde la parte superior */
+    left: 15rem; /* Posición desde la izquierda */
+    width: 14.3rem; /* Ancho del área de advertencia */
+    height: 1.2rem; /* Altura del área de advertencia */
+    display: flex;
+    flex-direction: column; /* Organiza los elementos en columna */
+    gap: 1rem; /* Espacio entre elementos */
+}
+
+/* Estilo para el contenedor de botones */
+.botones {
+    position: absolute;
+    top: 55.4rem; /* Posición desde la parte superior */
+    left: 15rem; /* Posición desde la izquierda */
+    display: flex;
+    gap: 1.5rem; /* Espacio entre botones */
+}
+
+/* Estilo para los botones de encriptador y desencriptador */
+.boton__encriptador, .boton__desencriptador {
+    width: 20.5rem; /* Ancho del botón */
+    height: 4rem; /* Altura del botón */
+    border-radius: 1.5rem; /* Bordes redondeados */
+    font-family: var(--fuente-primaria); /* Fuente utilizada en los botones */
+    transition: background-color 0.5s ease, backdrop-filter 0.5s ease; /* Transición suave para los cambios de fondo y filtro */
+    overflow: hidden; /* Oculta el desbordamiento del contenido */
+    letter-spacing: 1px;
+}
+
+/* Estilo específico para el botón de encriptador */
+.boton__encriptador {
+    color: var(--color-terciario); /* Color del texto */
+    background-color: var(--color-primario); /* Color de fondo */
+    backdrop-filter: blur(15px); /* Filtro de desenfoque */
+}
+
+/* Estilo para el estado hover del botón de encriptador */
+.boton__encriptador:hover {
+    background-color: rgb(34, 142, 142); /* Cambia el color de fondo al pasar el cursor */
+    color: black;
+}
+
+/* Estilo específico para el botón de desencriptador */
+.boton__desencriptador {
+    color: var(--color-primario); /* Color del texto */
+    background-color: var(--color-cuarto); /* Color de fondo */
+    border: solid var(--color-primario); /* Borde sólido con color primario */
+    backdrop-filter: blur(35px); /* Filtro de desenfoque más intenso */
+}
+
+/* Estilo para el estado hover del botón de desencriptador */
+.boton__desencriptador:hover {
+    background-color: rgb(39, 154, 154); /* Cambia el color de fondo al pasar el cursor */
+}
+
+
+/* Estilo para el texto de resultado */
+.text__resultado {
+    color: black; /* Color del texto */
+    font-size: 1.5rem; /* Tamaño de fuente */
+    position: absolute;
+    top: 9.5rem; /* Posición desde la parte superior */
+    left: 62.5rem; /* Posición desde la izquierda */
+    width: 25rem; /* Ancho del área de resultado */
+    height: 50rem; /* Altura automática para adaptarse al contenido */
+    background-image: linear-gradient(to bottom right,rgb(6, 246, 246),rgb(154, 38, 154)); /* Color de fondo */
+    border-radius: 2rem; /* Bordes redondeados */
+    border: 0; /* Sin borde */
+    box-shadow: 10px 10px rgb(91, 83, 83); /* Sombra de caja */
+    padding: 1.5rem; /* Padding interno */
+    overflow: auto; /* Permite el desplazamiento si el contenido es mayor que el contenedor */
+    text-align: left; /* Alinea el texto a la izquierda */
+    display: flex;
+    flex-direction: column; /* Organiza los elementos en columna */
+    gap: 1rem; /* Espacio entre líneas de texto */
+}
+
+.ingresa {
+    color: black;
+}
+
+/* Estilo para el logo del muñeco */
+.logo__muñeco {
+    position: absolute;
+    top: 17.8rem; /* Posición desde la parte superior */
+    left: 65.1rem; /* Posición desde la izquierda */
+    width: 21rem; /* Ancho del logo */
+    height: 19rem; /* Altura del logo */
+}
+
+/* Estilo para el contenedor de mensajes */
+.container {
+    position: absolute;
+    top: 42rem; /* Posición desde la parte superior */
+    left: 65rem; /* Posición desde la izquierda */
+    width: 21rem; /* Ancho del contenedor */
+    height: 7.6rem; /* Altura del contenedor */
+    display: flex;
+    flex-direction: column; /* Organiza los elementos en columna */
+    gap: 1rem; /* Espacio entre elementos */
+}
+
+/* Estilo para el mensaje y el texto de ingreso */
+.mensaje, .ingrese {
+    font-family: var(--fuente-primaria); /* Fuente utilizada */
+}
+
+.mensaje {
+    font-weight: bold; /* Negrita */
+    font-size: 1.5rem; /* Tamaño de fuente */
+}
+
+.ingrese {
+    color: var(--color-secundario); /* Color del texto */
+    font-size: 1rem; /* Tamaño de fuente */
+}
+
+/* Estilo para el botón de copiar */
+.boton__copiar {
+    display: none; /* Oculta el botón por defecto */
+    background-color: var(--color-cuarto); /* Color de fondo */
+    border-radius: 2rem; /* Bordes redondeados */
+    box-shadow: 5px 5px black; /* Sombra de caja */
+    position: absolute;
+    top: 110%; /* Posición desde la parte superior */
+    left: 76.5%; /* Posición desde la izquierda */
+    width: 10rem; /* Ancho del botón */
+    height: 3.1rem; /* Altura del botón */
+}
+
+/* Estilo para el footer */
+footer {
+    display: flex;
+    flex-direction: column; /* Organiza los elementos en columna */
+    position: absolute;
+    width: 100%; /* Ancho completo del contenedor */
+    text-align: center; /* Centra el texto */
+    top: 138%; /* Posición desde la parte superior */
+}
+
+
+/* Estilo para pantallas pequeñas (móviles) */
+@media screen and (max-width: 767px) {
+    
+    .logo__alura {
+        top: 4rem;
+        left: 1rem;
+    }
+
+    .text__usuario {
+        left: 3rem;
+        top: 15rem;
+        width: 30rem;
+    }
+
+    .advertencia {
+        left: 1.5rem;
+    }
+
+    .botones {
+        left: 1.5rem;
+        width: 36.5rem;
+    }
+
+    .text__resultado {
+        width: 30rem; /* Ancho ajustado */
+        height: 10rem; /* Altura automática */
+        top: 61rem; /* Posición ajustada */
+        left: 4.5rem; /* Posición ajustada */
+    }
+
+    .container {
+        left: 11rem;
+        top: 63rem;
+    }
+
+    .logo__muñeco {
+        display: none;
+    }
+
+    .boton__copiar {
+        top: 70rem;
+        left: 15rem;
+        opacity: 75%;
+    }
+
+    footer {
+        top: 75rem;
+        left: 7.5rem;
+    }
+}
+
+/* Estilo para pantallas medianas (tablets) */
+@media screen and (min-width: 767px) and (max-width: 1023px) 
+{
+    header {
+        font-size: 1.8rem; /* Tamaño de fuente ajustado */
+    }
+
+    .logo__alura {
+        width: 50px; /* Tamaño ajustado */
+        height: 80px; /* Tamaño ajustado */
+        top: 2.5rem; /* Posición ajustada */
+        left: 1.5rem; /* Posición ajustada */
+    }
+
+    .text__usuario {
+        top: 13rem; /* Posición ajustada */
+        left: 4rem; /* Posición ajustada */
+        width: 30rem; /* Ancho ajustado */
+        height: 10rem; /* Altura ajustada */
+        font-size: 1.8rem; /* Tamaño de fuente ajustado */
+    }
+
+    .advertencia {
+        top: 35rem; /* Posición ajustada */
+        left: 4rem; /* Posición ajustada */
+    }
+
+    .botones {
+        top: 37.5rem; /* Posición ajustada */
+        width: 41rem; /* Ancho ajustado */
+        height: 4rem; /* Altura ajustada */
+        left: 4rem; /* Posición ajustada */
+    }
+
+    .text__resultado {
+        width: 32rem; /* Ancho ajustado */
+        height: 15rem; /* Altura ajustada */
+        top: 43rem; /* Posición ajustada */
+        left: 8rem; /* Posición ajustada */
+    }
+
+    .container {
+        width: 25rem; /* Ancho ajustado */
+        height: auto; /* Altura automática */
+        top: 48.5rem; /* Posición ajustada */
+        left: 14rem; /* Posición ajustada */
+    }
+
+    .ingrese {
+        width: 100%; /* Ancho completo */
+    }
+
+    .logo__muñeco {
+        display: none;
+    }
+
+    footer {
+        top: 60rem; /* Posición ajustada */
+        left: 1rem;
+    }
+}
+
