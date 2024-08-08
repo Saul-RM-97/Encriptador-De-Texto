@@ -7,7 +7,7 @@
 
 /* Variables de color y fuente */
 :root {
-    --color-fondo: #FDFFAE; /* Color de fondo general */
+    --color-fondo: #E7F0DC; /* Color de fondo general */
     --color-primario: #0A3871; /* Color primario (azul oscuro) */
     --color-secundario: #495057; /* Color secundario (gris oscuro) */
     --color-terciario: white; /* Color terciario (blanco) */
@@ -121,7 +121,7 @@ header {
     left: 62.5rem; /* Posición desde la izquierda */
     width: 25rem; /* Ancho del área de resultado */
     height: 50rem; /* Altura automática para adaptarse al contenido */
-    background-image: linear-gradient(to bottom right,rgb(6, 246, 246),rgb(154, 38, 154)); /* Color de fondo */
+    background-image: linear-gradient(to bottom right,#B5C0D0,#CCD3CA); /* Color de fondo */
     border-radius: 2rem; /* Bordes redondeados */
     border: 0; /* Sin borde */
     box-shadow: 10px 10px rgb(91, 83, 83); /* Sombra de caja */
@@ -199,6 +199,12 @@ footer {
 
 /* Estilo para pantallas pequeñas (móviles) */
 @media screen and (max-width: 767px) {
+
+    header {
+        position: absolute;
+        left: 6rem;
+        width: 24rem;
+    }
     
     .logo__alura {
         top: 4rem;
