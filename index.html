@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es-mx">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador De Texto</title>
+    <link rel="stylesheet" href="style.css"><!-- Enlace al CSS -->
+</head>
+<body>
+    <header>ENCRIPTADOR DE TEXTO</header>
+    <main>
+        <section>
+            <div class="logo__alura"><!--Logo de alura-->
+                <img src="./Logos/Logo.png" alt="Logo alura">
+            </div>
+            <div>
+                <textarea class="text__usuario" id="mensajeTexto" required cols="75" rows="2" placeholder="Ingrese el texto aquí" maxlength="500"></textarea><!-- Campo para el texto que va ser encriptado/desencriptado -->
+            </div>
+            <div class="advertencia">
+                <p><span>(!) Solo letras minúsculas y sin acentos</span></p><!-- Texto de advertencia -->
+            </div>
+            <div class="botones">
+                <button class="boton__encriptador" id="encript" onclick="encripta()">Encriptador</button><!-- Botón para encriptar -->
+                <button class="boton__desencriptador" id="desEncript" onclick="desEncripta()">Desencriptar</button><!-- Botón para desencriptar -->
+            </div>
+            <div>
+                <textarea id="mensajeResultado" class="text__resultado" readonly cols="50" rows="30"></textarea><!-- Área para mostrar el texto encriptado/desencriptado -->
+            </div>
+            <div>
+                <button onclick="btnCopiar()" id="botonCopiar" class="boton__copiar">Copiar</button><!-- Botón para copiar el texto -->
+            </div>
+            <div id="imagenLogoMuñeco" class="logo__muñeco">
+                <img src="./Logos/Muñeco.png" width="300" height="280" alt="Logo muñeco">
+            </div>
+            <section id="imagenLogo" class="container">
+                <div class="mensaje">
+                    <p><strong>Ningún mensaje fue encontrado</strong></p>
+                </div>
+                <div class="ingrese">
+                    <p class="ingresa">Ingresa el texto que desees encriptar o desencriptar</p>
+                </div>
+            </section>
+        </section>
+    </main>
+    <footer>
+        Desarrollado por Saul Rivera! 2024.
+    </footer>
+    <script src="java.js"></script> <!-- Enlace al archivo JavaScript -->
+</body>
+</html>
