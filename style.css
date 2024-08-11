@@ -180,8 +180,8 @@ header {
     border-radius: 2rem; /* Bordes redondeados */
     box-shadow: 5px 5px black; /* Sombra de caja */
     position: absolute;
-    top: 110%; /* Posición desde la parte superior */
-    left: 76.5%; /* Posición desde la izquierda */
+    top: 55rem; /* Posición desde la parte superior */
+    left: 70.5rem; /* Posición desde la izquierda */
     width: 10rem; /* Ancho del botón */
     height: 3.1rem; /* Altura del botón */
 }
@@ -193,7 +193,7 @@ footer {
     position: absolute;
     width: 100%; /* Ancho completo del contenedor */
     text-align: center; /* Centra el texto */
-    top: 138%; /* Posición desde la parte superior */
+    top: 62rem; /* Posición desde la parte superior */
 }
 
 
@@ -213,29 +213,38 @@ footer {
 
     .text__usuario {
         left: 3rem;
-        top: 15rem;
+        top: 11rem;
         width: 30rem;
+        height: 33rem;
     }
 
     .advertencia {
+        font-size: 1rem;
+        width:17rem;
         left: 1.5rem;
+        top: 45rem;
     }
 
     .botones {
         left: 1.5rem;
         width: 36.5rem;
+        top: 47.5rem;
+    }
+
+    .boton__encriptador, .boton__desencriptador {
+        font-size: 1.3rem;
     }
 
     .text__resultado {
         width: 30rem; /* Ancho ajustado */
-        height: 10rem; /* Altura automática */
-        top: 61rem; /* Posición ajustada */
+        height: 11rem; /* Altura automática */
+        top: 55rem; /* Posición ajustada */
         left: 4.5rem; /* Posición ajustada */
     }
 
     .container {
-        left: 11rem;
-        top: 63rem;
+        left: 10rem;
+        top: 58rem;
     }
 
     .logo__muñeco {
@@ -243,13 +252,13 @@ footer {
     }
 
     .boton__copiar {
-        top: 70rem;
+        top: 67.5rem;
         left: 15rem;
         opacity: 75%;
     }
 
     footer {
-        top: 75rem;
+        top: 71.5rem;
         left: 7.5rem;
     }
 }
@@ -269,36 +278,40 @@ footer {
     }
 
     .text__usuario {
-        top: 13rem; /* Posición ajustada */
+        top: 9rem; /* Posición ajustada */
         left: 4rem; /* Posición ajustada */
-        width: 30rem; /* Ancho ajustado */
-        height: 10rem; /* Altura ajustada */
+        width: 40rem; /* Ancho ajustado */
+        height: 21.5rem; /* Altura ajustada */
         font-size: 1.8rem; /* Tamaño de fuente ajustado */
     }
 
     .advertencia {
-        top: 35rem; /* Posición ajustada */
+        top: 32rem; /* Posición ajustada */
         left: 4rem; /* Posición ajustada */
     }
 
     .botones {
-        top: 37.5rem; /* Posición ajustada */
+        top: 34.5rem; /* Posición ajustada */
         width: 41rem; /* Ancho ajustado */
         height: 4rem; /* Altura ajustada */
         left: 4rem; /* Posición ajustada */
     }
 
+.boton__encriptador, .boton__desencriptador {
+    font-size: 1.3rem;
+}
+
     .text__resultado {
         width: 32rem; /* Ancho ajustado */
         height: 15rem; /* Altura ajustada */
-        top: 43rem; /* Posición ajustada */
+        top: 40.5rem; /* Posición ajustada */
         left: 8rem; /* Posición ajustada */
     }
 
     .container {
         width: 25rem; /* Ancho ajustado */
         height: auto; /* Altura automática */
-        top: 48.5rem; /* Posición ajustada */
+        top: 45.5rem; /* Posición ajustada */
         left: 14rem; /* Posición ajustada */
     }
 
@@ -306,13 +319,17 @@ footer {
         width: 100%; /* Ancho completo */
     }
 
-    .logo__muñeco {
+    .logo__muñeco { /* Desaparecemos el logo*/
         display: none;
     }
 
+    .boton__copiar { /* Ajuste en el boton copiar*/
+        top: 56.5rem;
+        left: 19rem;
+    }
+
     footer {
-        top: 60rem; /* Posición ajustada */
+        top: 61rem; /* Posición ajustada */
         left: 1rem;
     }
 }
-
