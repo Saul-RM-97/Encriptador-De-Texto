@@ -84,6 +84,8 @@ header {
     transition: background-color 0.5s ease, backdrop-filter 0.5s ease; /* Transición suave para los cambios de fondo y filtro */
     overflow: hidden; /* Oculta el desbordamiento del contenido */
     letter-spacing: 1px;
+    box-shadow: 5px 5px gray;
+    backdrop-filter: blur (15px);
 }
 
 /* Estilo específico para el botón de encriptador */
