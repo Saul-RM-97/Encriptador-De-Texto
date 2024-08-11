@@ -76,6 +76,7 @@ header {
 
 /* Estilo para los botones de encriptador y desencriptador */
 .boton__encriptador, .boton__desencriptador {
+    font-zise: 2rem;
     width: 20.5rem; /* Ancho del botón */
     height: 4rem; /* Altura del botón */
     border-radius: 1.5rem; /* Bordes redondeados */
