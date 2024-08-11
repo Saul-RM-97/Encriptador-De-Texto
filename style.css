@@ -175,6 +175,7 @@ header {
 
 /* Estilo para el botón de copiar */
 .boton__copiar {
+    font-family: var(--fuente-primaria);
     display: none; /* Oculta el botón por defecto */
     background-color: var(--color-cuarto); /* Color de fondo */
     border-radius: 2rem; /* Bordes redondeados */
