@@ -76,7 +76,7 @@ header {
 
 /* Estilo para los botones de encriptador y desencriptador */
 .boton__encriptador, .boton__desencriptador {
-    font-zise: 2rem;
+    font-size: 1.3rem;
     width: 20.5rem; /* Ancho del botón */
     height: 4rem; /* Altura del botón */
     border-radius: 1.5rem; /* Bordes redondeados */
@@ -176,6 +176,7 @@ header {
 
 /* Estilo para el botón de copiar */
 .boton__copiar {
+    font-size: 1.3rem;
     font-family: var(--fuente-primaria);
     display: none; /* Oculta el botón por defecto */
     background-color: var(--color-cuarto); /* Color de fondo */
