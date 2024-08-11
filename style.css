@@ -46,7 +46,7 @@ header {
     top: 10rem; /* Posición desde la parte superior */
     left: 15rem; /* Posición desde la izquierda */
     width: 36rem; /* Ancho del campo de texto */
-    height: 3rem; /* Altura del campo de texto */
+    height: 36rem; /* Altura del campo de texto */
     background: none; /* Sin fondo */
     border: none; /* Sin borde */
 }
