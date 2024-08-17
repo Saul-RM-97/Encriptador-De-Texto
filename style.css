@@ -46,7 +46,7 @@ header {
     top: 10rem; /* Posición desde la parte superior */
     left: 15rem; /* Posición desde la izquierda */
     width: 36rem; /* Ancho del campo de texto */
-    height: 3rem; /* Altura del campo de texto */
+    height: 35rem; /* Altura del campo de texto */
     background: none; /* Sin fondo */
     border: none; /* Sin borde */
 }
@@ -76,6 +76,7 @@ header {
 
 /* Estilo para los botones de encriptador y desencriptador */
 .boton__encriptador, .boton__desencriptador {
+    font-size: 1.3rem;
     width: 20.5rem; /* Ancho del botón */
     height: 4rem; /* Altura del botón */
     border-radius: 1.5rem; /* Bordes redondeados */
@@ -175,6 +176,7 @@ header {
 
 /* Estilo para el botón de copiar */
 .boton__copiar {
+    font-family: var(--fuente-primaria);
     display: none; /* Oculta el botón por defecto */
     background-color: var(--color-cuarto); /* Color de fondo */
     border-radius: 2rem; /* Bordes redondeados */
@@ -198,7 +200,7 @@ footer {
 
 
 /* Estilo para pantallas pequeñas (móviles) */
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 430px) {
 
     header {
         position: absolute;
@@ -264,7 +266,7 @@ footer {
 }
 
 /* Estilo para pantallas medianas (tablets) */
-@media screen and (min-width: 767px) and (max-width: 1023px) 
+@media screen and (min-width: 430px) and (max-width: 768px) 
 {
     header {
         font-size: 1.8rem; /* Tamaño de fuente ajustado */
